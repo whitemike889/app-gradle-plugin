@@ -163,19 +163,19 @@ pluginBundle {
     appenginePlugin {
       id = 'com.google.cloud.tools.appengine'
       displayName = 'App Engine Gradle Plugin'
-      description = 'Managed your Java App Engine build and deploy'
+      description = 'Manage your Java App Engine build and deploy'
       tags = ['google', 'java', 'appengine', 'app engine', 'microservices']
     }
     appengineWebXmlPlugin {
       id = 'com.google.cloud.tools.appengine-appenginewebxml'
       displayName = 'App Engine Gradle Plugin (appengine-web.xml)'
-      description = 'Managed your Java App Engine appengine-web.xml based project build and deploy'
+      description = 'Manage your Java App Engine appengine-web.xml based project build and deploy'
       tags = ['google', 'java', 'appengine', 'app engine', 'appengine-web.xml', 'microservices']
     }
     appYamlPlugin {
       id = 'com.google.cloud.tools.appengine-appyaml'
       displayName = 'App Engine Gradle Plugin (app.yaml)'
-      description = 'Managed your Java App Engine app.yaml based project build and deploy'
+      description = 'Manage your Java App Engine app.yaml based project build and deploy'
       tags = ['google', 'java', 'appengine', 'app engine', 'app.yaml', 'microservices']
     }
   }
