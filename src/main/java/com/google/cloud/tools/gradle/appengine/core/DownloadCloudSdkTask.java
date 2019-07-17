@@ -29,6 +29,7 @@ import com.google.cloud.tools.managedcloudsdk.components.SdkUpdater;
 import com.google.cloud.tools.managedcloudsdk.install.SdkInstaller;
 import com.google.cloud.tools.managedcloudsdk.install.SdkInstallerException;
 import com.google.common.annotations.VisibleForTesting;
+import com.google.common.collect.ImmutableList;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +41,7 @@ import org.gradle.api.tasks.TaskAction;
 public class DownloadCloudSdkTask extends DefaultTask {
 
   private ManagedCloudSdk managedCloudSdk;
-  private List<SdkComponent> components = new ArrayList<>();
+  private final List<SdkComponent> components = new ArrayList<>();
 
   public void setManagedCloudSdk(ManagedCloudSdk managedCloudSdk) {
     this.managedCloudSdk = managedCloudSdk;
@@ -53,7 +54,7 @@ public class DownloadCloudSdkTask extends DefaultTask {
   @VisibleForTesting
   @Internal
   List<SdkComponent> getComponents() {
-    return components;
+    return ImmutableList.copyOf(components);
   }
 
   /** Task entrypoint : Download/update Cloud SDK. */
