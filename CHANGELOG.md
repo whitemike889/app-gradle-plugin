@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2.1.0
 ### Added
-* `gcloud` mode to `appengine.deploy` block ([#356](../../pull/356))
+* `gcloudMode` to `appengine.deploy` block ([#356](../../pull/356))
 
 ## 2.0.1
 ### Fixed
